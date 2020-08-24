@@ -337,7 +337,7 @@ ul.nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 65vh;
+  min-height: 70vh;
   width: 90%;
   border: 3px solid rgba(74, 105, 121, 0.2);
   border-radius: 2rem;
@@ -382,12 +382,12 @@ ul.nav a:hover {
   align-items: center;
   height: 100%;
   width: 40%;
-  background: white;
-  border-radius: 1rem;
 }
 
-.about-left div {
-  width: 8rem;
+.about-left img {
+  height: 85%;
+  width: 25rem;
+  border-radius: 2rem;
 }
 
 .about-right {
