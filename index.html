@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daymon Abbott</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://use.fontawesome.com/4bd45c73e4.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="./assets/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark bg-transparent fixed-top"
+    >
+      <a class="navbar-brand" href="#"><span></span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              style="color: white;"
+              onMouseOver="this.style.color='#fd9f66'"
+              onMouseOut="this.style.color='white'"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#portfolio"
+              style="color: white;"
+              onMouseOver="this.style.color='#fd9f66'"
+              onMouseOut="this.style.color='white'"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#about"
+              style="color: white;"
+              onMouseOver="this.style.color='#fd9f66'"
+              onMouseOut="this.style.color='white'"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#contact"
+              style="color: white;"
+              onMouseOver="this.style.color='#fd9f66'"
+              onMouseOut="this.style.color='white'"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="bg" id="home">
+      <div id="bgimg" class="fade-in">
+        <img src="./assets/bodybg.png" />
+      </div>
+      <div
+        class="container"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+        data-aos-delay="1000"
+      >
+        <h1>Daymon Abbott</h1>
+        <h4>Frontend Developer</h4>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="section-header" data-aos="zoom-in" data-aos-duration="2000">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="portfolio">
+        <div class="container">
+          <div class="row">
+            <div
+              onmouseover="showHover1()"
+              onmouseout="hideHover1()"
+              id="pw"
+              class="project pw col-6 col-lg-5"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <div id="pwOverlay"></div>
+              <img src="./assets/pw.png" alt="" />
+              <div id="hover1" class="phover">
+                <h4>
+                  Petroleum service company servicing all of Oregon and
+                  Washington
+                  <br />
+                  (In development)
+                </h4>
+                <button
+                  onclick="location.href='https://thedesignstate.github.io/PWLLC/'"
+                  class="btn btn-transparent"
+                >
+                  View Website
+                </button>
+              </div>
+            </div>
+
+            <div
+              onmouseover="showHover2()"
+              onmouseout="hideHover2()"
+              id="jg"
+              class="project jg col-6 col-lg-5"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
+              <div id="jgOverlay"></div>
+              <img src="./assets/jg.png" alt="" />
+              <div id="hover2" class="phover">
+                <h4>
+                  Up and coming CPA based in Forest Grove
+                </h4>
+                <button
+                  onclick="location.href='https://jasongraycpas.com/index.html'"
+                  class="btn btn-transparent"
+                >
+                  View Website
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about borders" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="about-left col-8 col-lg-4">
+              <div>
+                <h1>IMAGE</h1>
+              </div>
+            </div>
+            <div class="about-right col-xs-8 col-lg-7">
+              <div class="about-title">
+                <h1>About Me</h1>
+              </div>
+              <div class="about-desc">
+                <p>
+                  My name is Daymon Abbott and I am a Frontend developer based
+                  out the North Plains, Oregon. Using HTML, CSS, JavaScript,
+                  jquery, and Bootstrap, I am able to create responsive and
+                  aesthetic websites based on the needs of the client. I
+                  constantly strive to learn new technologies and growing my
+                  skillset as both a designer and developer by taking on new
+                  challenge and continually push the boundries of what I can do.
+                </p>
+                <div class="icons">
+                  <i
+                    class="fab fa-html5"
+                    style="
+                      font-size: 3rem;
+                      color: #e34c26;
+                      -webkit-text-stroke: 1px #ddd;
+                    "
+                  ></i>
+                  <i
+                    class="fab fa-css3-alt"
+                    style="
+                      font-size: 3rem;
+                      color: #2965f1;
+                      -webkit-text-stroke: 1px #ddd;
+                    "
+                  ></i>
+                  <i
+                    class="fab fa-js-square"
+                    style="font-size: 3rem; color: #f0db4f;"
+                  ></i>
+                  <i
+                    class="fab fa-bootstrap"
+                    style="
+                      font-size: 3rem;
+                      color: #602c50;
+                      -webkit-text-stroke: 1px #ddd;
+                    "
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="1500">
+        <h1>Contact</h1>
+      </div>
+      <div class="contact" data-aos="fade-up" data-aos-duration="1500">
+        <form
+          id="myContact"
+          class="col-10 col-md-8 col-lg-4"
+          action="https://formspree.io/mdowvjwk"
+          method="POST"
+        >
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="Your Email Addess"
+            required
+          />
+          <label for="phone">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="submit" id="submit" value="Send">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2020 Daymon Abbott</p>
+    </footer>
+
+    <script>
+      function showHover1() {
+        let hover1 = document.getElementById('hover1');
+        hover1.style.display = 'flex';
+      }
+      function hideHover1() {
+        let hover1 = document.getElementById('hover1');
+        hover1.style.display = 'none';
+      }
+
+      function showHover2() {
+        let hover2 = document.getElementById('hover2');
+        hover2.style.display = 'flex';
+      }
+      function hideHover2() {
+        let hover2 = document.getElementById('hover2');
+        hover2.style.display = 'none';
+      }
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+      integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
