@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+html {
+  width: 100%;
+}
+
+body {
+  /* background-color: #eee; */
+  background-image: url('./bodybg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.d-none {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  margin-right: 4rem;
+}
+
+ul.nav a:hover {
+  color: #fd9f66 !important;
+}
+
+.navbar {
+  position: absolute;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bgimg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#bgimg img {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+  max-width: 1000px;
+  position: absolute;
+  -webkit-animation: spin 25s linear infinite;
+  -moz-animation: spin 25s linear infinite;
+  animation: spin 25s linear infinite;
+  z-index: -1000;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* Fade In */
+.fade-in {
+  animation: fadeIn ease 6s;
+  -webkit-animation: fadeIn ease 6s;
+  -moz-animation: fadeIn ease 6s;
+  -o-animation: fadeIn ease 6s;
+  -ms-animation: fadeIn ease 6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Home */
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(75, 85, 105, 0.9);
+  z-index: -100;
+}
+
+#home h1 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+#home h4 {
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+/* Portfolio */
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#portfolio .section-header {
+  display: flex;
+  height: 12rem;
+  width: 50rem;
+  padding: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio .section-header h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: #4b5569;
+  font-weight: bold;
+}
+
+#portfolio .container {
+  width: 100vw;
+}
+
+#portfolio .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: #aaa;
+  border: 2px solid white;
+  border-radius: 2rem;
+  padding: 0;
+  margin: 2rem;
+}
+
+.pw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./pwbg.jpg');
+  background-repeat: no-repeat;
+  background-size: 150% 40vh;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+#pwOverlay {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  background: rgba(74, 105, 121, 0.8);
+  border-radius: 2rem;
+  z-index: 2;
+}
+
+.pw img {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  z-index: 3;
+}
+
+.jg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./jgbg.jpg');
+  background-repeat: no-repeat;
+  background-size: 110% 40vh;
+  background-position-x: 0rem;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+#jgOverlay {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  background: rgba(0, 181, 253, 0.5);
+  border-radius: 2rem;
+  z-index: 2;
+}
+
+.jg img {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  z-index: 3;
+}
+
+.phover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(75, 85, 105, 0.9);
+  margin: 0;
+  padding: 5rem;
+  border-radius: 2rem;
+  z-index: 4;
+}
+
+.phover h4 {
+  text-align: center;
+  color: white;
+}
+
+#hover1 {
+  display: none;
+}
+
+#hover2 {
+  display: none;
+}
+
+.btn-transparent {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.35rem;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 2rem;
+  margin-top: 3rem;
+  padding: 0.8rem 1.25rem;
+}
+
+/* About */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  width: 90%;
+  border: 3px solid rgba(74, 105, 121, 0.2);
+  border-radius: 2rem;
+  background-color: #4b5569;
+}
+
+.borders {
+  position: relative;
+  border: 5px solid #aaa;
+  border-radius: 2rem;
+}
+
+.borders:after {
+  content: ' ';
+  position: absolute;
+  z-index: 1;
+  top: 7px;
+  left: 7px;
+  right: 7px;
+  bottom: 7px;
+  border: 4px solid #ccc;
+  border-radius: 1.5rem;
+}
+
+#about .container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+#about .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.about-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+
+.about-left img {
+  height: 85%;
+  width: 25rem;
+  border-radius: 2rem;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  color: white;
+}
+
+.about-title h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.about-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  color: white;
+  margin-top: -1rem;
+}
+
+.about-desc p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 10rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 35rem;
+  width: 90%;
+  margin-top: -2rem;
+}
+
+#contact .section-header {
+  display: flex;
+  height: 10rem;
+  width: 30vw;
+  padding-top: 4rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .section-header h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 0;
+  color: #4b5569;
+  font-family: 'Raleway', sans-serif;
+}
+
+#myContact {
+  display: flex;
+  flex-direction: column;
+  background: #4b5569;
+  padding: 2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 5px solid slategray;
+}
+
+#myContact label {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#myContact input {
+  margin-bottom: 1.1rem;
+  border-radius: 0.4rem;
+  height: 2.5rem;
+  border: 3px solid white;
+  padding: 1rem;
+}
+
+#myContact textarea {
+  border-radius: 0.4rem;
+  border: 3px solid rgb(74, 105, 121);
+  padding: 1rem;
+  height: 30vh;
+}
+
+#submit {
+  height: 3rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 0.4rem;
+  border: 3px solid rgba(74, 105, 121, 1);
+  font-family: 'Raleway', sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  background: #4b5569;
+}
+
+footer p {
+  color: white;
+}
+
+/*---Media Queries --*/
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .nav-link {
+    font-size: 1rem;
+    margin-right: 2.5rem;
+  }
+
+  #home {
+    width: 100%;
+  }
+
+  /* Portfolio */
+  #portfolio {
+    width: 100%;
+  }
+
+  #portfolio .row {
+    justify-content: center;
+  }
+
+  #portfolio .section-header {
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  .project {
+    height: 30vh;
+  }
+
+  .pw {
+    background-size: 150% 30vh;
+  }
+
+  #pwOverlay {
+    height: 30vh;
+  }
+
+  .jg {
+    background-size: 110% 30vh;
+  }
+
+  #jgOverlay {
+    height: 30vh;
+  }
+
+  /* About */
+
+  .about {
+    margin-top: 10rem;
+  }
+
+  .about-left {
+    display: none;
+  }
+
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+  }
+
+  .about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin: 2rem auto 2rem auto;
+    color: white;
+  }
+
+  .about-title h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .about-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80vw;
+    color: white;
+    margin-top: -1rem;
+  }
+
+  .about-desc p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  /* Contact */
+  #contact {
+    height: 110vh;
+  }
+
+  #contact .section-header {
+    display: flex;
+    height: 10rem;
+    width: 30vw;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.75rem;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    font-weight: bold;
+  }
+  #portfolio .section-header h1 {
+    font-size: 2.75rem;
+    text-align: center;
+    color: #4b5569;
+    font-weight: bold;
+  }
+
+  .about-title h1 {
+    font-size: 2.75rem;
+    font-weight: bold;
+  }
+  #contact .section-header h1 {
+    font-size: 2.75rem;
+    text-align: center;
+    padding: 0;
+    color: #4b5569;
+    font-family: 'Raleway', sans-serif;
+  }
+}
